@@ -197,6 +197,11 @@ section .title::after{
 /* about section styling */
 .about p {
     text-align: center;
+
+}
+
+.about .ukuran iframe{
+    margin: auto 0 auto 30px;
 }
 /*.about .gambar {
     width: 10px;
@@ -319,4 +324,23 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+/*buat tugas sekolah CLEAR FIX*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
