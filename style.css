@@ -270,19 +270,6 @@ section .title::after {
     text-decoration: underline;
 }
 
-.twitter {
-    /* width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-image: url(image/twitter.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    text-indent: -9999px;
-    position: absolute;
-    top: -17px;
-    right: -20px;*/
-}
-
 /* footer section styling */
 footer {
     background: #000;
@@ -301,18 +288,10 @@ footer span a:hover {
     text-decoration: underline;
 }
 
-
 /* responsive media query start */
 @media (max-width: 1300px) {
     .home .max-width {
         margin-left: 0px;
-    }
-}
-
-@media (max-width: 1104px) {
-    .about .about-content .left img {
-        height: 350px;
-        width: 350px;
     }
 }
 
