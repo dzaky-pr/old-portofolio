@@ -202,6 +202,7 @@ section .title::after {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    width: 100%;
 }
 
 .home .max-width {
@@ -289,6 +290,7 @@ footer {
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    width: 100%;
 }
 
 footer span a {
