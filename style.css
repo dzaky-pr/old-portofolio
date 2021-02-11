@@ -10,9 +10,6 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
     background-color: #e7e7e7;
     height: auto;
     width: auto;
