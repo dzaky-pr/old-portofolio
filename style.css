@@ -290,7 +290,7 @@ footer {
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    width: 100%;
+    width: auto;
 }
 
 footer span a {
