@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #e7e7e7;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -158,10 +162,11 @@ section .title::after {
 }
 
 .scroll-up-btn {
+
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #111111;
+    background: #ffffff;
     right: 30px;
     bottom: 10px;
     text-align: center;
