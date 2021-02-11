@@ -1,13 +1,14 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -15,9 +16,11 @@ html{
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
@@ -27,27 +30,36 @@ html{
 }
 
 /* all similar content styling codes */
-section{
+section {
     padding: 100px 0;
 }
-.max-width{
+
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content, 
+
+.about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-section .title{
+
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -56,7 +68,8 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
+
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -66,7 +79,8 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+
+section .title::after {
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -78,7 +92,7 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
+.navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -86,32 +100,39 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+
+.navbar.sticky {
     padding: 15px 0;
     background: black;
 }
-.navbar .max-width{
+
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+
+.navbar .logo a {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+
+.navbar .logo a span {
     color: black;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+
+.navbar.sticky .logo a span {
     color: #fff;
 }
-.navbar .menu li{
+
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+
+.navbar .menu li a {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -119,21 +140,24 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+
+.navbar .menu li a:hover {
     color: black;
 }
-.navbar.sticky .menu li a:hover{
+
+.navbar.sticky .menu li a:hover {
     color: #fff;
 }
 
 /* menu btn styling */
-.menu-btn{
+.menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
@@ -152,17 +176,19 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn:hover{
+
+.scroll-up-btn:hover {
     filter: brightness(90%);
 }
 
 /* home section styling */
-.home{
+.home {
     background: url("gambar/wallpaperfilter.png") no-repeat center;
     display: flex;
     height: 100vh;
@@ -172,22 +198,27 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+
+.home .max-width {
     margin: auto 0 auto 30px;
 }
-.home .home-content .text-1{
+
+.home .home-content .text-1 {
     font-size: 27px;
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+
+.home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+
+.home .home-content .text-3 span {
     color: black;
     font-weight: 500;
     background-color: white;
@@ -200,9 +231,10 @@ section .title::after{
 
 }
 
-.about .ukuran iframe{
+.about .ukuran iframe {
     margin: auto 0 auto 30px;
 }
+
 /*.about .gambar {
     width: 10px;
     height: 10px;
@@ -213,50 +245,88 @@ section .title::after{
     object-fit: cover;
 }
 */
+
+/*contact section styling*/
+.contact-text {
+    text-align: center;
+}
+
+.media {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.media a {
+    color: black;
+    text-decoration: none;
+}
+
+.media a:hover {
+    text-decoration: underline;
+}
+
+.twitter {
+    /* width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-image: url(image/twitter.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -17px;
+    right: -20px;*/
+}
+
 /* footer section styling */
-footer{
+footer {
     background: #000;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
 }
-footer span a{
+
+footer span a {
     color: white;
     text-decoration: none;
 }
-footer span a:hover{
+
+footer span a:hover {
     text-decoration: underline;
 }
 
 
 /* responsive media query start */
 @media (max-width: 1300px) {
-    .home .max-width{
+    .home .max-width {
         margin-left: 0px;
     }
 }
 
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
 }
 
 @media (max-width: 991px) {
-    .max-width{
+    .max-width {
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
-    .menu-btn{
+
+@media (max-width: 947px) {
+    .menu-btn {
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+
+    .menu-btn i.active:before {
         content: "\f00d";
     }
-    .navbar .menu{
+
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -267,56 +337,68 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+
+    .navbar .menu.active {
         left: 0;
     }
-    .navbar .menu li{
+
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 70px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 35px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
-    .max-width{
+
+    .max-width {
         max-width: 930px;
     }
 
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 60px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 32px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 20px;
     }
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 50px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 27px;
     }
-    .scroll-up-btn{
+
+    .scroll-up-btn {
         right: 15px;
         bottom: 15px;
         height: 38px;
@@ -329,8 +411,10 @@ footer span a:hover{
 /*buat tugas sekolah CLEAR FIX*/
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .cf:after {
