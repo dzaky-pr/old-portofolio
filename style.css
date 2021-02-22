@@ -145,7 +145,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .navbar.sticky .menu li a:hover {
