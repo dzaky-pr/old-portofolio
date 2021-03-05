@@ -258,7 +258,7 @@ section .title::after {
     margin: auto;
 }
 
-.projects .dzaky-project img {
+/* .projects .dzaky-project img {
     /*background-color: green;*/
     background-position: center;
     height: 200px;
@@ -266,7 +266,7 @@ section .title::after {
     margin: auto;
     display: flex;
 }
-
+ */
 /*contact section styling*/
 .contact-text {
     text-align: center;
