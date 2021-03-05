@@ -261,8 +261,8 @@ section .title::after {
 .projects .dzaky-project img {
     /*background-color: green;*/
     background-position: center;
-    height: 300px;
-    width: 450px;
+    height: 200px;
+    width: 300px;
     margin: auto;
     display: flex;
 }
