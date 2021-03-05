@@ -44,7 +44,7 @@ section {
 }
 
 .about,
-.services,
+.projects,
 .skills,
 .teams,
 .contact,
@@ -53,7 +53,7 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
+.projects .serv-content,
 .skills .skills-content,
 .contact .contact-content {
     display: flex;
@@ -145,7 +145,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .navbar.sticky .menu li a:hover {
@@ -236,20 +236,36 @@ section .title::after {
 
 }
 
-.about .ukuran iframe {
-    margin: auto 0 auto 30px;
+.about .gambar {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 0 auto 50px auto;
+    background-image: url("gambar/dzaky.jpg");
+    background-size: 525px;
+    background-position: -133px -350px;
 }
 
-/*.about .gambar {
-    width: 10px;
-    height: 10px;
+/*project section styling*/
+.projects .max-width {}
+
+.projects .list-project ul {
+    list-style-type: none;
 }
-.about .gambar img{
-    border-width: 40px 40px;
-    border-radius: 50% ;
-    object-fit: cover;
+
+.projects .max-width .title {
+    margin: auto;
 }
-*/
+
+.projects .dzaky-project img {
+    /*background-color: green;*/
+    background-position: center;
+    height: 300px;
+    width: 450px;
+    margin: auto;
+    display: flex;
+}
 
 /*contact section styling*/
 .contact-text {
@@ -287,6 +303,35 @@ footer span a {
 footer span a:hover {
     text-decoration: underline;
 }
+
+.copyright {
+    color: white;
+    display: inline-block;
+}
+
+.copyright,
+.copyright::after {
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(var(--ggs, 1));
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid;
+    border-radius: 40px
+}
+
+.copyright::after {
+    content: "";
+    position: absolute;
+    border-right-color: transparent;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+    transform: none
+}
+
 
 /* responsive media query start */
 @media (max-width: 1300px) {
@@ -391,25 +436,4 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
-}
-
-/*buat tugas sekolah CLEAR FIX*/
-.cf:before,
-.cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
 }
