@@ -1,6 +1,15 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* color guide 
+black : #000
+charcoal : #36454F
+broken white : #EEEBE3
+pure white : #fff
+blue denim : #36416C
+light blue denim : #6E7AA8 */
+
+/* all */
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +19,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #e7e7e7;
-    height: auto;
-    width: auto;
 }
 
 /* custom scroll bar */
@@ -44,8 +50,8 @@ section {
 }
 
 .about,
-.projects,
 .skills,
+.projects,
 .teams,
 .contact,
 footer {
@@ -79,7 +85,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgb(0, 0, 0);
     transform: translateX(-50%);
 }
 
@@ -105,8 +111,8 @@ section .title::after {
 }
 
 .navbar.sticky {
-    padding: 15px 0;
-    background: black;
+    padding: 15px 0px 0px;
+    background: #36416C;
 }
 
 .navbar .max-width {
@@ -122,7 +128,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-    color: black;
+    color: #36416C;
     transition: all 0.3s ease;
 }
 
@@ -145,7 +151,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: rgb(0, 0, 0);
+    color: #36416C;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -161,18 +167,16 @@ section .title::after {
 }
 
 .scroll-up-btn {
-
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #ffffff;
+    background: #36416C;
     right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
     z-index: 9999;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 6px;
     border-bottom-width: 2px;
     cursor: pointer;
@@ -201,7 +205,6 @@ section .title::after {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    width: 100%;
 }
 
 .home .max-width {
@@ -224,13 +227,17 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-    color: black;
+    color: #6E7AA8;
     font-weight: 500;
-    background-color: white;
-    padding: 3px;
+    /* background-color: white;
+    padding: 3px; */
 }
 
 /* about section styling */
+.about .title::after {
+    content: "who am i?";
+}
+
 .about p {
     text-align: center;
 
@@ -240,45 +247,161 @@ section .title::after {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    background-color: green;
     margin: 0 auto 50px auto;
     background-image: url("gambar/dzaky.jpg");
     background-size: 525px;
     background-position: -133px -350px;
 }
 
-/*project section styling*/
-.projects .max-width {}
+/* skills section styling */
+section#skills.skills {
+    width: 100%;
+}
 
-.projects .list-project ul {
+.skills {
+    background-color: #EEEBE3;
+    color: rgb(0, 0, 0);
+}
+
+.skills .title::before,
+.teams .title::before {
+    background: #000;
+}
+
+.skills .title::after,
+.teams .title::after {
+    background: #EEEBE3;
+    content: "what i use?";
+
+}
+
+.skills ul {
     list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.projects .max-width .title {
-    margin: auto;
+.skills li {
+    width: 90px;
 }
 
-.projects .dzaky-project {
+.dzaky-skills .skills-img {
+    width: 90px;
+}
+
+.dzaky-skills .skills-overlay {
+
+    position: absolute;
+    top: -3px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.dzaky-skills .skills-overlay:hover {
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px 5px #888888;
+}
+
+.dzaky-skills {
+    position: relative;
+}
+
+.dzaky-skills-info {
+    height: 30px;
+}
+
+.dzaky-skills-info .icon-desc {
+    color: black;
     text-align: center;
 }
 
-/* 
-.projects .dzaky-project img {
-    background-color: green;
-    background-position: center;
+/*project section styling*/
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects li {
+    width: 370px;
+    height: 250px;
+}
+
+.dzaky-projects .projects-img {
+    width: 370px;
+    height: 250px;
+}
+
+.dzaky-projects .projects-overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.dzaky-projects .projects-overlay:hover {
+    opacity: 1;
+}
+
+.release-date {
+    font-size: .8em;
+}
+
+.projects-title {
+    font-weight: bold;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+
+.dzaky-projects {
+    position: relative;
+}
+
+/* .dzaky-projects img {
     height: 200px;
     width: 300px;
-    margin: auto;
-    display: flex;
 } */
 
 /*contact section styling*/
-.contact-text {
-    text-align: center;
+.contact {
+    background-color: #EEEBE3;
 }
 
-.media {
-    justify-content: space-between;
+.contact .title::before,
+.teams .title::before {
+    background: #000;
+}
+
+.contact .title::after,
+.teams .title::after {
+    background: #EEEBE3;
+    content: "more about me?";
+
+}
+
+.contact .media {
+    text-align: center;
+    display: flexbox;
+}
+
+.contact .contact-text p {
     text-align: center;
 }
 
@@ -297,16 +420,17 @@ footer {
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    width: 100%;
 }
 
 footer span a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 footer span a:hover {
     text-decoration: underline;
+    color: #6E7AA8;
 }
 
 .copyright {
@@ -441,4 +565,5 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+
 }
