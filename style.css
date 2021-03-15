@@ -463,4 +463,41 @@ footer span a:hover {
 
 
 /* responsive media query start */
-/* coming soon!*/
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .projects ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .projects li {
+        width: 300px;
+        height: 180px;
+    }
+
+    .dzaky-projects .projects-img {
+        width: 300px;
+        height: 180px;
+    }
+
+
+}
