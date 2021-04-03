@@ -39,6 +39,10 @@ html {
 }
 
 /* all similar content styling codes */
+body {
+    background-color: #fff;
+}
+
 section {
     padding: 100px 0;
 }
