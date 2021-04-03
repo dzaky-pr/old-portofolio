@@ -326,9 +326,10 @@ section#skills.skills {
 /*project section styling*/
 .projects ul {
     list-style-type: none;
-    padding: 0;
+    padding: auto;
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .projects li {
@@ -368,16 +369,16 @@ section#skills.skills {
     font-weight: bold;
     margin-top: 3px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .dzaky-projects {
     position: relative;
 }
 
-/* .dzaky-projects img {
-    height: 200px;
-    width: 300px;
-} */
+.container-projects .container-2 {
+    padding-top: 75px;
+}
 
 /*contact section styling*/
 .contact {
@@ -467,12 +468,17 @@ footer span a:hover {
     .home .max-width {
         margin-left: 0px;
     }
+
+    .container-projects .container-2 {
+        padding-top: 45px;
+    }
 }
 
 @media (max-width: 991px) {
     .max-width {
         padding: 0 50px;
     }
+
 }
 
 @media (max-width: 947px) {
@@ -528,6 +534,9 @@ footer span a:hover {
         max-width: 930px;
     }
 
+    .dzaky-projects {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -546,6 +555,7 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
+
 }
 
 @media (max-width: 500px) {
@@ -570,9 +580,8 @@ footer span a:hover {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: stretch;
         align-items: center;
-
     }
 
     .projects li {
@@ -601,4 +610,7 @@ footer span a:hover {
         width: 70px;
     }
 
+    .container-projects .container-2 {
+        padding-top: 0;
+    }
 }
