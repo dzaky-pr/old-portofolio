@@ -17,6 +17,10 @@ light blue denim : #6E7AA8 */
     text-decoration: none;
 }
 
+body {
+    background-color: #fff;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,10 +43,6 @@ html {
 }
 
 /* all similar content styling codes */
-body {
-    background-color: #fff;
-}
-
 section {
     padding: 100px 0;
 }
