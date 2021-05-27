@@ -71,6 +71,10 @@ $(document).ready(function(){
     });
 });
 
+function alert(){
+    alert('Go check out my second website!');
+}
+
 //disable cut copy paste
 // $(document).ready(function() {
 // 	$('body').bind('cut copy paste', function (e) {
