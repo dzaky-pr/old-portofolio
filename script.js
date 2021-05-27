@@ -71,7 +71,7 @@ $(document).ready(function(){
     });
 });
 
-function alert(){
+function newAlert(){
     alert('Go check out my second website! at https://dzaky-pr.github.io/dzaky-pr/');
 }
 
