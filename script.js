@@ -72,7 +72,7 @@ $(document).ready(function(){
 });
 
 function alert(){
-    alert('Go check out my second website!');
+    alert('Go check out my second website! at https://dzaky-pr.github.io/dzaky-pr/');
 }
 
 //disable cut copy paste
