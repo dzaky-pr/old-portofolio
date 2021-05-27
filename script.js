@@ -71,10 +71,6 @@ $(document).ready(function(){
     });
 });
 
-function newAlert(){
-    alert('Go check out my second website! at https://dzaky-pr.github.io/dzaky-pr/');
-}
-
 //disable cut copy paste
 // $(document).ready(function() {
 // 	$('body').bind('cut copy paste', function (e) {
