@@ -6,7 +6,7 @@
     <title>Dzaky Purnomo Rifa'i</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="gambar/favicon.ico">
-    <meta property="og:image" content="gambar/memoji.png">
+    <meta property="og:image" content="gambar/logo-dzaky.png">
     <meta property="og:description" content="Welcome To My Website">
     <meta property="og:title" content="Enjoy!">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -17,10 +17,19 @@
 </head>
 
 <body>
+    <div class="preloader-container" style="background-color: #32363a">
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>Loading portfolio page, please wait :)</p>
+      </div>
     <div class="scroll-up-btn">
         <img src="gambar/arrow-up.svg"></img>
     </div>
-<nav class="navbar">
+<nav style="display: none" class="navbar">
     <div class="max-width">
         <div class="logo">
             <a href="#">Portfolio.</a>
@@ -41,7 +50,7 @@
 </nav>
 
 <!-- home section start -->
-    <section class="home" id="home">
+    <section style="display: none" class="home" id="home">
         <div class="max-width">
             <div class="home-content">
     <div class="display-animation"></div>
@@ -56,7 +65,7 @@ And I'm a <span class="typing"></span></div>
 </section>
 
 <!-- about section start -->
-<section class="about" id="about">
+<section style="display: none" class="about" id="about">
     <div class="max-width">
         <div class="ukuran cf">
             <h2 class="title">About Me</h2>
@@ -67,7 +76,7 @@ And I'm a <span class="typing"></span></div>
 </section>
 
 <!-- skills section start -->
-<section class="skills" id="skills">
+<section style="display: none" class="skills" id="skills">
     <div class="max-widht">
         <h2 class="title">Skills</h2>
         <div class="container-skills">
@@ -135,7 +144,7 @@ And I'm a <span class="typing"></span></div>
 </section>
 
 <!-- project section start -->
-<section class="projects" id="projects">
+<section style="display: none" class="projects" id="projects">
     <div class="max-widht">
         <h2 class="title">Projects</h2>
         <div class="container-projects">
@@ -166,19 +175,19 @@ And I'm a <span class="typing"></span></div>
                 </li>
             </ul>
             <ul class="container-2">
-                <li class="dzaky-projects"><a href="https://dzaky-pr.github.io/skill-path-web-developer-pemula/" target="_blank">
-                    <img src="gambar/project4.png" alt="Web Dev Pemula" class="projects-img">
+                <li class="dzaky-projects"><a href="https://dzaky-pr.github.io/birthday-card/" target="_blank">
+                    <img src="gambar/comingsoon.png" alt="Coming Soon!" class="projects-img">
                         <div class="projects-overlay">
-                            <div class="release-date">May 2021</div>
-                            <div class="projects-title">Landing Page</div>
+                            <div class="release-date">?</div>
+                            <div class="projects-title">Coming Soon!</div>
                         </div>
                     </a>
                 </li>
-                <li class="dzaky-projects"><a href="https://dzaky-pr.github.io/dzaky-pr/" target="_blank">
-                    <img src="gambar/project5.png" alt="My Second Design" class="projects-img">
+                <li class="dzaky-projects"><a href="#" target="">
+                    <img src="gambar/comingsoon.png" alt="Coming Soon!" class="projects-img">
                         <div class="projects-overlay">
-                            <div class="release-date">May 2021</div>
-                            <div class="projects-title">My Second Design!</div>
+                            <div class="release-date">?</div>
+                            <div class="projects-title">Coming Soon!</div>
                         </div>
                     </a>
                 </li>
@@ -196,11 +205,11 @@ And I'm a <span class="typing"></span></div>
 </section>
 
 <!-- contact section start -->
-<section class="contact" id="contact">
+<section style="display: none" class="contact" id="contact">
     <div class="max-width">
         <h2 class="title">Contact</h2> 
             <div class="contact-text">
-                <p>Email : dzakyrifai06@gmail.com</p>
+                <p>Email : dzaky.pr.mulyono97@gmail.com</p>
             </div>
         <br>
     <div class="media">
@@ -224,10 +233,24 @@ And I'm a <span class="typing"></span></div>
 </section>
 
     <!-- footer section start -->
-    <footer>
+    <footer style="display: none" class="dzaky-footer">
         <span class="copyright"></span> 2021<span><a href="#"> Dzaky Rifa'i.</a> All rights reserved.</span></span>
     </footer>
-
+    <script>
+        const simulation = (action, ms) => setTimeout(action, ms);
+        const hidePreloader = () => {
+          document.querySelector('.preloader-container').style.display = 'none';
+          document.querySelector('.navbar').style.display = 'block';
+          document.querySelector('.home').style.display = 'flex';
+          document.querySelector('.about').style.display = 'block';
+          document.querySelector('.skills').style.display = 'block';
+          document.querySelector('.projects').style.display = 'block';
+          document.querySelector('.contact').style.display = 'block';
+          document.querySelector('.dzaky-footer').style.display = 'block';
+        };
+  
+        simulation(() => hidePreloader(), 1500);
+      </script>
 <script src="script.js"></script>
 </body>
 </html>
