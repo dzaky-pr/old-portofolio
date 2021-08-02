@@ -27,7 +27,7 @@
           document.querySelector('.dzaky-footer').style.display = 'block';
         };
   
-        simulation(() => hidePreloader(), 1500);
+        window.onload = simulation(() => hidePreloader(), 1500);
       </script>
 </head>
 
