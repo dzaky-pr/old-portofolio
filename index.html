@@ -722,33 +722,31 @@
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-<form action="forms/email.php" method="post" role="form" class="php-email-form">
+              <form class="php-email-form">
                 <div class="row">
                   <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" required />
+                    <input type="text" name="name" class="form-control" id="name" placeholder="under maintenance"  disabled/>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="under maintenance"  disabled />
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="under maintenance"  disabled />
                 </div>
                 <div class="form-group">
                   <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                  <textarea class="form-control" name="message" rows="10" placeholder="under maintenance"  disabled></textarea>
                 </div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <a href="mailto:dzakyrifai06@gmail.com">
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </a>
+                <div class="text-center"> <a href="mailto:dzakyrifai06@gmail.com">Just Click Me!<!--<button type="submit">Just Click Me!</button> --></a></div>
               </form>
             </div>
           </div>
